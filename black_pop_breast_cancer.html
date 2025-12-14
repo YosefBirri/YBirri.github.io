@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Black Population & Breast Cancer | Geo Data Science Project</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Breast Cancer Disparities | Geo Data Science</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
 <header>
   <div class="container hero">
     <div class="hero-text">
-      <h1>Black Population & Breast Cancer Intervention</h1>
+      <h1>Breast Cancer Disparities in the United States</h1>
       <p>
-        Project 6 examining Black population distribution across U.S. counties and disparities in breast cancer mortality.
+        Lab 6 — Mapping Black Population Distribution and Breast Cancer Mortality by Race
       </p>
       <nav>
         <a href="index.html">Portfolio Home</a>
@@ -22,38 +23,99 @@
   </div>
 </header>
 
-<section id="project-details">
-  <div class="container">
-    <h2>Project Overview</h2>
-    <p>
-      This project investigates the spatial distribution of Black populations across U.S. counties and identifies priority areas for targeted breast cancer interventions.
-      We also compare breast cancer mortality among Black women to other racial groups.
-    </p>
+<main>
 
-    <h2>Methodology</h2>
-    <ul>
-      <li>Data: U.S. Census population data, CDC breast cancer mortality data</li>
-      <li>Software: QGIS, R</li>
-      <li>Analysis: Spatial joins, choropleth mapping, priority scoring</li>
-      <li>Visualization: Maps highlighting counties with high Black population and elevated mortality rates</li>
-    </ul>
-
-    <h2>Key Insights</h2>
-    <ul>
-      <li>Counties with higher Black population density often coincide with higher breast cancer mortality rates.</li>
-      <li>Identified priority intervention areas to improve health outcomes.</li>
-      <li>Spatial analysis highlights inequities in health resource allocation.</li>
-    </ul>
-
-    <h2>Maps</h2>
-    <p>Insert static or interactive maps here.</p>
-
-    <div class="buttons">
-      <a href="#" class="btn primary">View Interactive Map</a>
-      <a href="https://github.com/YosefBirri/project3" class="btn secondary">GitHub</a>
-    </div>
-  </div>
+<section class="container project-overview">
+  <h2>Project Overview</h2>
+  <p>
+    This project examines racial disparities in breast cancer outcomes across the
+    United States by combining demographic and health data at the county level.
+    Since breast cancer mortality is consistently higher among Black women,
+    this analysis focuses on identifying where Black populations are most
+    concentrated and how mortality rates differ by race spatially.
+  </p>
+  <p>
+    The maps created in this lab are intended to support public health planning
+    by highlighting counties where the population-level burden of breast cancer
+    mortality may be greatest and where targeted intervention efforts may be most
+    impactful.
+  </p>
 </section>
+
+<section class="container data-methods">
+  <h2>Data & Methods</h2>
+  <ul>
+    <li><strong>Demographic Data:</strong> U.S. Census county-level population data</li>
+    <li><strong>Health Data:</strong> Breast cancer mortality rates by race</li>
+    <li><strong>Spatial Unit:</strong> U.S. counties</li>
+    <li><strong>Software:</strong> QGIS</li>
+    <li><strong>Techniques:</strong> Choropleth mapping, data classification, spatial comparison</li>
+  </ul>
+  <p>
+    Population proportions and mortality rates were mapped using standardized
+    classification schemes to allow comparison across counties and regions.
+    Rates were used rather than raw counts to ensure meaningful spatial interpretation.
+  </p>
+</section>
+
+<section class="container map-section">
+  <h2>Map 1: Black Population Distribution Across U.S. Counties</h2>
+  <p>
+    Since Black individuals experience higher breast cancer mortality nationally,
+    this map classifies U.S. counties based on the proportion of Black residents.
+    Counties where Black residents comprise <strong>50% or more</strong> of the total
+    population are categorized as <strong>high Black population</strong> counties,
+    those with <strong>20% to 49.9%</strong> as <strong>moderate</strong>, and those
+    with <strong>less than 20%</strong> as <strong>low</strong>.
+  </p>
+  <p>
+    This classification highlights where Black communities are most spatially
+    concentrated and where the <strong>population-level impact of breast cancer
+    mortality disparities may be most significant</strong>, providing a demographic
+    context for identifying priority areas for public health intervention.
+  </p>
+
+  <!-- Replace src with your actual map image -->
+  <img src="images/black-population-map.png" alt="Black population distribution map" class="map-image" />
+</section>
+
+<section class="container map-section">
+  <h2>Map 2: Breast Cancer Mortality Rate by Race</h2>
+  <p>
+    In comparison to other racial groups, Black women experience
+    <strong>higher breast cancer mortality rates across much of the United States</strong>.
+    This map visualizes race-specific breast cancer mortality rates at the county
+    level, revealing widespread geographic disparities that persist across regions.
+  </p>
+  <p>
+    By mapping mortality rates rather than raw counts, this visualization enables
+    meaningful comparison across counties and highlights areas where inequities
+    in health outcomes may reflect differences in access to screening, treatment,
+    and broader structural healthcare resources.
+  </p>
+
+  <!-- Replace src with your actual map image -->
+  <img src="images/breast-cancer-mortality-map.png" alt="Breast cancer mortality by race map" class="map-image" />
+</section>
+
+<section class="container discussion">
+  <h2>Discussion</h2>
+  <p>
+    Together, these maps reveal that regions with high concentrations of Black
+    residents often overlap with areas experiencing elevated breast cancer
+    mortality among Black women. While population concentration alone does not
+    explain mortality outcomes, the spatial patterns suggest that structural
+    factors such as healthcare access, screening availability, and socioeconomic
+    conditions play a critical role.
+  </p>
+  <p>
+    Identifying these geographic patterns can help inform more equitable public
+    health strategies by directing prevention, screening, and treatment resources
+    toward communities most affected by breast cancer disparities.
+  </p>
+</section>
+
+</main>
 
 <footer>
   <div class="container">
