@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 5 – Ballot Dropbox Access Analysis</title>
+</head>
+<body>
+
+<h1>Project 5 – Ballot Dropbox Access Analysis</h1>
+<p><strong>Course:</strong> GEOG 360 – GIS & Mapping | <strong>Date:</strong> Dec 2025</p>
+<p><strong>Tools:</strong> QGIS, Census Data, Voting Data, Shapefiles</p>
+
+<h2>Project Overview</h2>
+<p>
+This project analyzes the accessibility of ballot dropboxes across King County, Washington. The goal is to identify areas where residents, especially minority populations, may have limited access to dropboxes and to visualize spatial disparities in voting accessibility.
+</p>
+
+<h2>Data & Methodology</h2>
+<ul>
+    <li><strong>Data Sources:</strong> Census Tracts, Demographics Table, Voting Districts, Ballot Dropbox Locations, City & County Council Districts.</li>
+    <li><strong>Processing Steps:</strong> Joined Demographics table to Census Tracts, created buffers (1–5 miles) around dropboxes, performed intersect with Voting Districts and Seattle City Council Districts.</li>
+    <li><strong>Spatial Analysis:</strong> Attribute queries for voter registration, buffer analysis to show access distances, dot density mapping for minority voters, intersection analysis for voting districts.</li>
+    <li><strong>Visualization Choices:</strong> Concentric buffers (1–5 miles), color-coded population density, map legends, and captions for clarity.</li>
+</ul>
+
+<h2>Research Question</h2>
+<p>
+How does racial composition influence the accessibility of ballot dropboxes in King County?
+</p>
+
+<h2>Final Map</h2>
+<img src="project5_main_map.png" alt="Concentric buffer map showing 1–5 mile access to ballot dropboxes">
+<p><em>Figure 1:</em> Areas within 1–5 miles of ballot dropboxes in King County. Yellow = 1 mile, green = 2 miles, etc.</p>
+
+<img src="project5_dot_density.png" alt="Dot density map showing minority voters within 1 mile">
+<p><em>Figure 2:</em> Estimated minority voters within 1 mile of a ballot dropbox using dot density mapping.</p>
+
+<h2>Key Insights</h2>
+<ul>
+    <li>Approximately 44% of all voters in King County live within 1 mile of a ballot dropbox.</li>
+    <li>Some census tracts with high minority populations have lower access to dropboxes, highlighting potential disparities.</li>
+    <li>Spatial distribution of dropboxes is concentrated in urban areas, leaving rural or suburban tracts with reduced access.</li>
+</ul>
+
+<h2>Reflection & Skills Demonstrated</h2>
+<p>
+This project demonstrates spatial data management, attribute and spatial queries, buffer analysis, and visual storytelling in QGIS. Key skills include data cleaning, table joins, demographic analysis, and creating dot density maps for population estimation.
+</p>
+
+<h2>Extras</h2>
+<ul>
+    <li><a href="project5_data.csv">Download dataset CSV</a></li>
+    <li><a href="project5_map.png">Download high-resolution map</a></li>
+</ul>
+
+</body>
+</html>
