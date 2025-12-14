@@ -1,84 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | GIS & Data Science Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yosef Birri | Geo Data Science Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Yosef Birrie</h1>
-            <p>GIS Specialist | Data Scientist </p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
+<header>
+  <div class="container hero">
+    <div class="hero-text">
+      <h1>Yosef Birri</h1>
+      <p>
+        Geo Data Science student focused on GIS, spatial analysis,
+        and applied machine learning for real-world decision making.
+      </p>
+
+      <div class="hero-tags">
+        <span class="tag">GIS</span>
+        <span class="tag">Data Science</span>
+        <span class="tag">Python</span>
+        <span class="tag">Spatial Analysis</span>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Put your photo in the same folder and name it profile.jpg -->
+    <img src="profile.jpg" alt="Yosef Birri" class="profile-pic">
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I am a Geo Data Science student at the University of Washington
+          with strong interests in GIS, spatial analytics, and data-driven
+          public policy.
+        </p>
+        <p>
+          I focus on transforming complex datasets into clear insights
+          through spatial analysis, predictive modeling, and interactive mapping.
+        </p>
+      </div>
+
+      <div class="skills">
+        <div class="skill-card">
+          <h3>GIS & Spatial</h3>
+          <ul>
+            <li>ArcGIS Pro, QGIS</li>
+            <li>Spatial Analysis & Cartography</li>
+            <li>Leaflet, Mapbox</li>
+            <li>Raster & Vector Data</li>
+          </ul>
         </div>
-    </header>
 
-    <section id="about" class="container">
-        <h2>👋 About Me</h2>
-        <p>I am a passionate analyst focused on leveraging **spatial data** to drive meaningful insights and solve real-world problems. My expertise lies at the intersection of geography, programming, and statistical modeling. I am proficient in leveraging tools like **PostGIS** for spatial database management and building data pipelines using **Python (Pandas, Scikit-learn)** for predictive analysis.</p>
-        
-        <div class="skills-grid">
-            <div class="skill-group">
-                <h3>GIS & Spatial</h3>
-                <ul>
-                    <li>ArcGIS Pro, QGIS</li>
-                    <li>Geospatial Analysis</li>
-                    <li>Web Mapping (Leaflet, Mapbox)</li>
-                    <li>Remote Sensing</li>
-                </ul>
-            </div>
-            <div class="skill-group">
-                <h3>Data Science & ML</h3>
-                <ul>
-                    <li>Python (Pandas, NumPy)</li>
-                    <li>Machine Learning (Clustering, Regression)</li>
-                    <li>SQL / PostGIS</li>
-                    <li>Data Visualization (Matplotlib, Tableau)</li>
-                </ul>
-            </div>
+        <div class="skill-card">
+          <h3>Data & Programming</h3>
+          <ul>
+            <li>Python (Pandas, NumPy, Scikit-learn)</li>
+            <li>R (Regression, Inference)</li>
+            <li>SQL / PostGIS</li>
+            <li>Data Visualization</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="projects" class="container">
-        <h2>🛠️ Selected Projects</h2>
+<section id="projects">
+  <div class="container">
+    <h2>Selected Projects</h2>
 
-        <div class="project-card">
-            <h3>1. Urban Heat Island Analysis</h3>
-            <p class="summary">Used Sentinel-2 satellite imagery and Python's GDAL library to calculate Land Surface Temperature (LST) and correlate it with urban tree canopy density across a major metropolitan area.</p>
-            <p class="tech">**Tech Stack:** Python, GDAL, NumPy, Matplotlib, QGIS</p>
-            <a href="LINK_TO_LIVE_MAP_OR_NOTEBOOK" target="_blank" class="button">View Live Project/Notebook</a>
-            <a href="LINK_TO_GITHUB_REPO" target="_blank" class="button secondary">GitHub Repository</a>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-image">Urban Heat Island</div>
+        <div class="project-content">
+          <h3>Urban Heat Island Analysis</h3>
+          <p>
+            Used satellite imagery to estimate land surface temperature
+            and analyze its relationship with urban tree canopy coverage.
+          </p>
+          <div class="tech">Python · GDAL · NumPy · QGIS</div>
+
+          <div class="buttons">
+            <a href="#" class="btn primary">Live Project</a>
+            <a href="#" class="btn secondary">GitHub</a>
+          </div>
         </div>
+      </div>
 
-        <div class="project-card">
-            <h3>2. Interactive Crime Prediction Map</h3>
-            <p class="summary">Developed a web application using Leaflet.js to visualize predicted crime hotspots generated by a historical $k$-means clustering model. Data was served from a PostGIS database.</p>
-            <p class="tech">**Tech Stack:** JavaScript (Leaflet), HTML/CSS, Python (Scikit-learn), PostGIS</p>
-            <a href="LINK_TO_LIVE_MAP_OR_NOTEBOOK" target="_blank" class="button">View Live Project/Notebook</a>
-            <a href="LINK_TO_GITHUB_REPO" target="_blank" class="button secondary">GitHub Repository</a>
+      <div class="project-card">
+        <div class="project-image">Crime Mapping</div>
+        <div class="project-content">
+          <h3>Interactive Crime Prediction Map</h3>
+          <p>
+            Built an interactive web map visualizing predicted crime hotspots
+            using clustering models and spatial databases.
+          </p>
+          <div class="tech">Leaflet · Python · Scikit-learn · PostGIS</div>
+
+          <div class="buttons">
+            <a href="#" class="btn primary">Live Map</a>
+            <a href="#" class="btn secondary">GitHub</a>
+          </div>
         </div>
+      </div>
 
-        </section>
+    </div>
+  </div>
+</section>
 
-    <footer id="contact">
-        <div class="container">
-            <h2>📞 Connect With Me</h2>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-            <div class="social-links">
-                <a href="LINK_TO_YOUR_LINKEDIN" target="_blank">LinkedIn</a>
-                |
-                <a href="LINK_TO_YOUR_GITHUB" target="_blank">GitHub</a>
-            </div>
-            <p class="copyright">&copy; 2025 Your Name</p>
-        </div>
-    </footer>
+<footer id="contact">
+  <div class="container">
+    <h2>Connect</h2>
+    <p>
+      Email:
+      <a href="mailto:yosephkebede34@gmail.com">yosephkebede34@gmail.com</a>
+    </p>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/yosef-birri-4486b2183">LinkedIn</a>
+      <a href="https://github.com/YosefBirri">GitHub</a>
+    </div>
+
+    <p class="copyright">© 2025 Yosef Birri</p>
+  </div>
+</footer>
 
 </body>
 </html>
