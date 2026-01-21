@@ -7,6 +7,7 @@
 
 ## Education
 
+
 **B.A. in Geography Data Science**
    > **Sep 2024 - Present**
   University of Washington
